@@ -3,7 +3,7 @@ const app= express();
 
 
 app.get('/',(req,res)=>{
-    res.send("Helluu from sanchit V1");
+    res.send('Hello from Jenkins Pipeline!');
 
 });
 
