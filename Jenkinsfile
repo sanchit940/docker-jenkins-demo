@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    
+
     environment{
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-cred')
         IMAGE_NAME = "yourdockerhubusername/demo-app"
@@ -9,7 +9,8 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                git branch: 'master',url: https://github.com/sanchit940/docker-jenkins-demo.git
+                git branch: 'master', url: 'https://github.com/sanchit940/docker-jenkins-demo.git'
+
 
             }
         }
